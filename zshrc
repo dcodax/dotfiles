@@ -3,12 +3,12 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 export ZSH_THEME="robbyrussell"
 export OH_MY_ZSH_DEBUG="true"
 
-source $ZSH/oh-my-zsh.sh
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx)
+plugins=(git osx vundle)
+
+source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias tree="tree -C"
