@@ -1,0 +1,13 @@
+#Dan's cmus configuration
+
+#Clear everything
+clear -l
+clear -p
+clear -q
+
+#colorscheme green
+colorscheme zenburn
+#bind -f common c player-pau1
+
+#Itunes library crap
+add ~/Music/Music/Music/

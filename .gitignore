@@ -2,7 +2,7 @@ tmux/*
 vim/bundle/*
 *.swp
 oh-my-zsh
-cmus
+cmus/*
 !cmus/rc
 .DStore
 .DS_Store
