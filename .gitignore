@@ -1,0 +1,8 @@
+tmux/*
+vim/bundle/*
+*.swp
+oh-my-zsh
+cmus
+!cmus/rc
+.DStore
+.DS_Store
