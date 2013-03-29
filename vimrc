@@ -137,29 +137,38 @@ endif
 let mapleader = ","           " Change <Leader> mapleader
 
 
-	" NERDTree {
-			let g:NERDTreeCaseSensitiveSort=1                            " Sort case sensitive.
-			let g:NERDTreeMouseMode=3                                    " Single click opens folders and files.
-			let NERDTreeHighlightCursorline = 1
-			let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$',
+" NERDTree {
+		let g:NERDTreeCaseSensitiveSort=1                            " Sort case sensitive.
+		let g:NERDTreeMouseMode=3                                    " Single click opens folders and files.
+		let NERDTreeHighlightCursorline = 1
+		let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$',
                    \ '.*\.pyc$']
-			nmap <leader>n :NERDTreeToggle<CR>  
-			                                                             " Shortcut for NERDTreeToggle  
-			"let NERDTreeShowHidden=1                                    " Show hidden files in NerdTree  
-			"autocmd vimenter * NERDTree                                 " Open a NERDTree automatically when vim starts up
-			"autocmd vimenter * if !argc() | NERDTree | endif            " Autoopen NERDTree when vim starts up if no files
-			autocmd bufenter * if (winnr("$") == 1 &&
-				\exists("b:NERDTreeType") &&
-				\b:NERDTreeType == "primary") | q | endif                 " Close vim if only one left open nt
-			"let g:NERDTreeQuitOnOpen=1                                  " Close tree after open.
-	" }
+		nmap <leader>n :NERDTreeToggle<CR>  
+		                                                             " Shortcut for NERDTreeToggle  
+		"let NERDTreeShowHidden=1                                    " Show hidden files in NerdTree  
+		"autocmd vimenter * NERDTree                                 " Open a NERDTree automatically when vim starts up
+		"autocmd vimenter * if !argc() | NERDTree | endif            " Autoopen NERDTree when vim starts up if no files
+		autocmd bufenter * if (winnr("$") == 1 &&
+			\exists("b:NERDTreeType") &&
+			\b:NERDTreeType == "primary") | q | endif                 " Close vim if only one left open nt
+		"let g:NERDTreeQuitOnOpen=1                                  " Close tree after open.
+" }
 	
-	"Powerline {
-			set nocompatible                                             " Disable vi-compatibility
-			set laststatus=2                                             " Always show the statusline
-			set encoding=utf-8                                           " Necessary to show Unicode glyphs
-			let g:Powerline_symbols = 'fancy'                             " Options: compatible,unicode,fancy
-	"}
+"Powerline {
+		set nocompatible                                             " Disable vi-compatibility
+		set laststatus=2                                             " Always show the statusline
+		set encoding=utf-8                                           " Necessary to show Unicode glyphs
+		let g:Powerline_symbols = 'fancy'                            " Options: compatible,unicode,fancy
+"Ctrl-P {
+		set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o                 " MacOSX/Linux
+
+		let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+		let g:ctrlp_custom_ignore = {
+		  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+		  \ 'file': '\v\.(exe|so|dll)$',
+		  \ 'link': 'some_bad_symbolic_links',
+		  \ }
+"}
 
 "------------------------"
 "WINDOWS SHORTCUTS
