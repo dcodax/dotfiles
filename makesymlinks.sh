@@ -30,6 +30,7 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+#problem creating symlinks where it does not correspond
 
 function install_zsh {
 # Test to see if zshell is installed. If it is:
@@ -59,7 +60,6 @@ fi
 
 install_zsh
 
-# Download tmux-powerline
 # Download patched-fonts for terminal
 
 #TODO: symlinks in all folders!! No please!!
@@ -89,3 +89,18 @@ function vundle-update () {
 }
 
 vundle
+
+function tmux-powerline-init () {
+  if [ ! -d ~/.tmux/tmux-powerline/ ]
+  then
+      mkdir -p ~/.tmux/tmux-powerline/
+  fi
+
+  if [ ! -d ~/.tmux/tmux-powerline/.git/ ]
+  then
+     git clone http://github.com/erikw/tmux-powerline.git ~/.tmux/tmux-powerline/
+     echo "\n\tRead about tmux-powerline configuration for powerline at \n"
+  fi
+}
+
+tmux-powerline-init
