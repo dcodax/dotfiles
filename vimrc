@@ -71,9 +71,8 @@ set shiftwidth=4
 set autoindent
 set number
 set antialias
-set mouse=a
-
 set mouse+=a
+
 if &term =~ '^screen'
 	" tmux knows the extended mouse mode
 	set ttymouse=xterm2
@@ -97,7 +96,13 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 set ai                        " Auto indent
 set si                        " Smart indent
 set wrap                      " Wrap lines
+set colorcolumn=80
+"Interesting post about softwrap
+"http://goo.gl/Xka7E
+"match ErrorMsg '\%>80v.\+'    " Hightlight lines over 80
 
+"set fo+=t
+"set linebreak
 
 " Statusline {
 		" " Not needed now when I use powerline.
