@@ -4,7 +4,7 @@ These are my configuration files. I'm using [Oh My ZSH](https://github.com/robby
 
 ## Installation
 
-Be careful, I'm still modifying thins!!!
+Be careful, I'm still modifying things!!!
 
 Run the following commands:
 
