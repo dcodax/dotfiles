@@ -33,8 +33,7 @@ DISABLE_AUTO_TITLE="true"
 # COMPLETION_WAITING_DOTS="true"
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$PATH
 export PATH=/usr/local/bin:/usr/local/share/python:$PATH
-export PATH=/usr/local/sbin:/usr/local/Cellar/aircrack-ng/1.1/sbin:/usr/local/Cellar/aircrack-ng/1.1/bin:$PATH
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$PATH
 export PATH=~/src/bin/:$PATH
 
