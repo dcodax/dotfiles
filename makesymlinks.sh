@@ -104,3 +104,6 @@ function tmux-powerline-init () {
 }
 
 tmux-powerline-init
+
+# Add virtualenv wrapper folder
+mkdir -p $HOME/.virtualenvs
